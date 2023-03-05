@@ -10,14 +10,13 @@ public class Cylinder : Shape
     // Start is called before the first frame update
     private void Start()
     {
-        shapeName = "cylinder";
+        SetName("cylinder");
         shape = GetComponent<MeshRenderer>();
         size = shape.bounds.size;
     }
     public override float CalculateVolume()
     {
         Transform t = GetComponent<ProBuilderMesh>().transform;
-        //Debug.Log("height=" + t.localScale.z);
         return Mathf.PI * (t.localScale.x*size.x / 2) * t.localScale.z*size.z;
     }
 }

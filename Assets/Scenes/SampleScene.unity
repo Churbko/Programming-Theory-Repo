@@ -159,7 +159,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 71, y: -110}
+  m_AnchoredPosition: {x: 57.5, y: -111}
   m_SizeDelta: {x: 80, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &16262616
@@ -476,7 +476,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 85, y: 148}
+  m_AnchoredPosition: {x: -46.4, y: 148}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &259964125
@@ -802,8 +802,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Select shape, then click on color buttons and speed buttons, to change
-    color or rotation speed of the shape.
+  m_text: 'Select shape, then click on the buttons to change color, rotation speed
+    or size !
 
 '
   m_isRightToLeft: 0
@@ -1251,7 +1251,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 36.000282, y: 0, z: 67.06616, w: 0}
+  m_margin: {x: -30.594753, y: 0, z: 67.06616, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -5590,9 +5590,9 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 0.9759803, b: 0.66415095, a: 1}
-  m_Intensity: 5
-  m_Range: 2.24
-  m_SpotAngle: 79
+  m_Intensity: 10
+  m_Range: 2.52
+  m_SpotAngle: 92
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
@@ -7162,7 +7162,7 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 0.9759803, b: 0.66415095, a: 1}
-  m_Intensity: 5
+  m_Intensity: 10
   m_Range: 2.24
   m_SpotAngle: 79
   m_InnerSpotAngle: 21.80208
@@ -7262,7 +7262,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 335, y: -4}
+  m_AnchoredPosition: {x: 207.4, y: -160}
   m_SizeDelta: {x: 60, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1628961978
@@ -7552,9 +7552,9 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 0.9759803, b: 0.66415095, a: 1}
-  m_Intensity: 5
-  m_Range: 2.24
-  m_SpotAngle: 79
+  m_Intensity: 10
+  m_Range: 2.55
+  m_SpotAngle: 87
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
@@ -7609,13 +7609,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1809855131}
-  m_LocalRotation: {x: 0.09947432, y: 0.045227144, z: 0.00452609, w: 0.99400145}
-  m_LocalPosition: {x: 5.3, y: 0.83, z: -1.66}
+  m_LocalRotation: {x: -0.024900323, y: -0.038394492, z: 0.0068282452, w: 0.9989291}
+  m_LocalPosition: {x: 5.3, y: 0.5, z: -1.73}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 11.382, y: 5.315, z: 1.052}
+  m_LocalEulerAnglesHint: {x: -2.821, y: -4.424, z: 0.892}
 --- !u!114 &1836087589 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1819871080882245, guid: 69660eb7c0b0fd04990fcdaf48a94c9c, type: 3}
@@ -7934,7 +7934,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 334.99997, y: 24.100002}
+  m_AnchoredPosition: {x: 269, y: -160}
   m_SizeDelta: {x: 60, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2024595439
@@ -8332,10 +8332,10 @@ RectTransform:
   m_Father: {fileID: 186686347}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -77, y: -111}
-  m_SizeDelta: {x: 80, y: -70}
+  m_SizeDelta: {x: 80, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2137047455
 MonoBehaviour:

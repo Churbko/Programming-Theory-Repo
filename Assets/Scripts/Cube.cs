@@ -10,7 +10,7 @@ public class Cube : Shape
     Vector3 size;
     void Start()
     {
-        shapeName = "cube";
+        SetName("cube");
         shape = GetComponent<MeshRenderer>();
         size = shape.bounds.size;
     }
@@ -18,7 +18,7 @@ public class Cube : Shape
 
     public override float CalculateVolume()
     {
-        //Debug.Log("width cube=" + transform.localScale);
+
         return transform.localScale.x*size.x* transform.localScale.y*size.y * transform.localScale.z*size.z;
     }
 }

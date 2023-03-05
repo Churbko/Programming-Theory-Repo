@@ -13,20 +13,18 @@ public class Prism : Shape
     void Start()
     {
 
-        shapeName = "prism";
+        SetName("prism");
         shape = GetComponent<MeshRenderer>();
-       size=shape.bounds.size;
-       
-        //Debug.Log("prism =" + size.x +" "+ size.y +" "+ size.z);
+        size = shape.bounds.size;
+
     }
 
     // Update is called once per frame
     public override float CalculateVolume()
     {
         Transform t = GetComponent<ProBuilderMesh>().transform;
-        //Debug.Log("height=" + t.localScale.z);
-        return ((t.localScale.x*size.x * t.localScale.z*size.z)/2) * t.localScale.y*size.y;
+        return ((t.localScale.x * size.x * t.localScale.z * size.z) / 2) * t.localScale.y * size.y;
     }
 
- 
-    }
+
+}
