@@ -18,7 +18,6 @@ public class Cylinder : Shape
     //POLYMORPHISM
     public override float CalculateVolume()
     {
-        Transform t = GetComponent<ProBuilderMesh>().transform;
-        return Mathf.PI * (t.localScale.x*size.x / 2) * t.localScale.z*size.z;
+        return Mathf.PI * (transform.localScale.x*size.x / 2) * transform.localScale.z*size.z;
     }
 }

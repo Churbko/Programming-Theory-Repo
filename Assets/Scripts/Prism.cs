@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.ProBuilder;
 
 
+
 //INHERITANCE
 public class Prism : Shape
 {
@@ -22,8 +23,8 @@ public class Prism : Shape
     // Update is called once per frame
     public override float CalculateVolume()
     {
-        Transform t = GetComponent<ProBuilderMesh>().transform;
-        return ((t.localScale.x * size.x * t.localScale.z * size.z) / 2) * t.localScale.y * size.y;
+
+        return transform.localScale.x * size.x * transform.localScale.z * size.z  * transform.localScale.y * size.y;
     }
 
 
