@@ -2,17 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public enum ColorEnum { purple, blue, red, green, pink, orange, yellow };
-    public Material purpleM, blueM, redM, greenM, pinkM, orangeM, yellowM;//assign
+    public Material purpleM, blueM, redM, greenM, pinkM, orangeM, yellowM;
     public Shape[] shapes;//assign
+    public Shape selectedShape=null;
     public Light[] selection;//assign
-    public TextMeshProUGUI volumeText,nameShape;//assign
-
     private Shape shapeScript;
-    private Shape selectedShape=null;
+    public TextMeshProUGUI volumeText,nameShape;
+    // Start is called before the first frame update
+    void Start()
+    {
+
+     }
+
     // Update is called once per frame
     void Update()
     {
@@ -23,7 +29,7 @@ public class GameManager : MonoBehaviour
             if (shape.IsSelected())
             {
                 if (selectedShape != shape&& selectedShape!=null)
-                {//this one has been selected we're keeping it
+                {//on garde celui ci..ça veut dire qu'il vient d'être sélectionné
                     
                     selectedShape.GetComponent<Shape>().UnSelect();
                 }
@@ -188,5 +194,13 @@ public class GameManager : MonoBehaviour
     {
         nameShape.text="Volume "+selectedShape.GetName()+" :";
     }
+
+
+   /* public void StartGame()
+    {
+
+    }*/
+
+
 
 }
