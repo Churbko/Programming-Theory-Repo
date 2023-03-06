@@ -6,18 +6,13 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
     public enum ColorEnum { purple, blue, red, green, pink, orange, yellow };
-    public Material purpleM, blueM, redM, greenM, pinkM, orangeM, yellowM;
+    public Material purpleM, blueM, redM, greenM, pinkM, orangeM, yellowM;//assign
     public Shape[] shapes;//assign
-    public Shape selectedShape=null;
     public Light[] selection;//assign
-    private Shape shapeScript;
-    public TextMeshProUGUI volumeText,nameShape;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public TextMeshProUGUI volumeText,nameShape;//assign
 
+    private Shape shapeScript;
+    private Shape selectedShape=null;
     // Update is called once per frame
     void Update()
     {
@@ -28,7 +23,7 @@ public class GameManager : MonoBehaviour
             if (shape.IsSelected())
             {
                 if (selectedShape != shape&& selectedShape!=null)
-                {//on garde celui ci..ça veut dire qu'il vient d'être sélectionné
+                {//this one has been selected we're keeping it
                     
                     selectedShape.GetComponent<Shape>().UnSelect();
                 }
