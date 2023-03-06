@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.ProBuilder;
-
+//INHERITANCE
 public class Cylinder : Shape
 {
     MeshRenderer shape;
@@ -14,6 +14,8 @@ public class Cylinder : Shape
         shape = GetComponent<MeshRenderer>();
         size = shape.bounds.size;
     }
+
+    //POLYMORPHISM
     public override float CalculateVolume()
     {
         Transform t = GetComponent<ProBuilderMesh>().transform;

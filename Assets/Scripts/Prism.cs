@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.ProBuilder;
 
 
-
+//INHERITANCE
 public class Prism : Shape
 {
     // Start is called before the first frame update

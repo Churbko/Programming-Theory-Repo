@@ -16,6 +16,7 @@ public abstract class Shape : MonoBehaviour
     private readonly int increment = 10;
     private readonly float increaseIncrement = 0.02f;
 
+    //ENCAPSULATION
     public float speed
     {
         get
@@ -97,7 +98,7 @@ public abstract class Shape : MonoBehaviour
         }
         
     }
-
+    //ABSTRACTION
     public abstract float CalculateVolume();
     public bool IsSelected()
     {
