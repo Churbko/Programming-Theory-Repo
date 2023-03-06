@@ -10,7 +10,7 @@ public abstract class Shape : MonoBehaviour
     public int indice;// see if this variable can be encapsulated
 
     [SerializeField] private Vector3 rotationAxe = new Vector3(0, 0, 1);
-    [SerializeField] private float m_speed = 1;
+    [SerializeField] private float m_speed=0;
 
     private bool selected=false;
     private readonly int increment = 10;
@@ -49,7 +49,7 @@ public abstract class Shape : MonoBehaviour
 
     protected void Rotate()
     {
-        transform.Rotate(m_speed * Time.deltaTime * rotationAxe);
+        transform.Rotate(speed * Time.deltaTime * rotationAxe);
     }
 
 
@@ -110,14 +110,19 @@ public abstract class Shape : MonoBehaviour
     }
     public void IncreaseSpeed()
     {
-        m_speed += increment;
+        speed += increment;
     }
     public void DecreaseSpeed()
     {
 
-        m_speed -= increment;
+        speed -= increment;
        /* if (speed < 0)
             speed = 0;*/
+    }
+
+    public void Freeze()
+    {
+        speed = 0;
     }
 
     protected void SetRotation(Vector3 v)
